@@ -1,0 +1,71 @@
+
+#page2 {
+    color: rgb(171,17,93);
+    text-align: center;
+    font-family: "Georgia", serif;
+    font-size: 50px;
+}
+
+#content {
+    text-align:center;
+    
+}
+.active {
+    display: block;
+}
+
+.inactive {
+    display: none;
+}
+
+
+#quote {
+    text-align: center;
+    font-family: "Georgia", serif;
+    color: rgb(90, 136, 173);
+}
+
+#ala {
+    font-size: 75px;
+}
+
+#cool {
+    text-align:center;
+}
+
+#musictag {
+    text-align: center;
+}
+
+/*#Katelyn {*/
+/*    color: rgb(171,17,93);*/
+/*}*/
+
+/*#Aarushi {*/
+/*    color: rgb(171,17,93);*/
+/*}*/
+
+/*#Nayna {*/
+/*    color: rgb(171,17,93);*/
+/*}*/
+
+.inner_about {
+    text-align:center;
+}
+
+
+.aboutstuff{
+    text-align: center;
+}
+/*#aligner {*/
+/*    text-align: center;*/
+/*}*/
+
+.contact{
+    text-align: center;
+}
+
+/*.coolstuff{*/
+/*    text-align:center;*/
+/*}*/
+

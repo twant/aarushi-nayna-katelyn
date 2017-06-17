@@ -1,0 +1,178 @@
+
+
+<!----THIS IS WHERE THE GOOD CODE STARTS!!!!!!>
+
+
+
+
+
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<!--<link rel="icon" type="image/x-icon" href="https://cdn4.iconfinder.com/data/icons/free-large-love-icons/512/Rose.png" />-->
+		<title>Music- tębucīkø</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+
+<style>
+	body{
+		background-color: #c391c9;
+	}
+</style>		
+
+	</head>
+	
+	<body>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="/" class="logo"><strong>tębucīkø</strong> <span>of arts</span></a>
+						
+					</header>
+			
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h1 id="ala">MUSIC</h1>
+									</header>
+
+									<!-- Content -->
+										<h2>WHERE WORDS FAIL, MUSIC SPEAKS</h2>
+										<p></p>
+										<div class="row" id="borderdropown">
+											<div class="6u 12u$(small)">
+										
+<form method = "POST" action = '/music'>
+  <h4>Select what genre of music you want to listen to:</h4>
+     <select  name="genre" style = "background: #dcb5e0">
+         <option  value="select">|     select |</option>
+          <option value="classical">classical</option>
+          <option value="pop">pop</option>
+          <option value="rNb">rNb</option>
+          <option value="blues">blues</option>
+          <option value="jazz">jazz</option>
+          <option value="rap_or_hiphop">rap or hiphop</option>
+          <option value="rock">rock</option>
+          <option value="reggae">reggae</option>
+          <option value="punk_rock">punk-rock</option>
+          <option value="country">country</option>
+          <option value="alternative">alternative</option>
+          <option value="dance_electronic">dance/electronic</option>
+          <option value="funk">funk</option>
+          <option value="gospel">gospel</option>
+          <option value="bluegrass">blue grass</option>
+          <option value="indie">indie</option>
+          <option value="latino">latino</option>
+          <option value="christian">christian</option>
+    </select>
+    <p>
+    	
+    	
+    	
+    </p>
+    <input type="submit"> 
+</form>
+<div class = "<%=@status%>">
+    
+</div>
+   
+   
+   
+  
+											</div>
+											<div class="6u$ 12u$(small)">
+												<h3> </h3>
+								
+											</div>
+											<!-- Break -->
+											
+											<!--I CHANGED STUFF HERE -->
+											<div class="4u 12u$(medium)">
+												<%if @status == "active"%>	
+												<h3 class = "capital">SPOTIFY <%=(@userGenre.upcase)%> PLAYLIST</h3>
+												<p><iframe src="<%=@result[0]%>" width="300" height="380" frameborder="0" allowtransparency="true"></iframe></p>
+												<%end%>
+												
+											</div>
+											<div class="4u 12u$(medium)">
+												<%if @status == "active"%>
+												<h3 class = "capital">YOUTUBE <%=(@userGenre.upcase)%> PLAYLIST </h3>
+												<p><iframe src="<%=@result[1]%>" width="300" height="380" frameborder="0" allowtransparency="true"></iframe></p>
+												<%end%>
+											</div>
+											<div class="4u$ 12u$(medium)">
+												
+												<%if @status == "active"%>
+												<h3 class = "capital">SPOTIFY <%=(@userGenre.upcase)%> PLAYLIST </h3>
+												<p><iframe src="<%=@result[2]%>" width="300" height="380" frameborder="0" allowtransparency="true"></iframe></p>
+												<%end%>
+											</div>
+										</div>
+								
+								
+								
+									
+								
+											
+											<!-- Break -->
+											<div class="inner">
+											<div class="row">
+											<div class="4u 12u$(medium)">
+												<h3>GLOBAL TOP 50</h3>
+												<p></p>
+											<iframe src="https://open.spotify.com/embed/user/spotifycharts/playlist/37i9dQZEVXbMDoHDwVN2tF" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+											
+											</div>
+											
+											
+											
+											
+											<div class="4u 12u$(medium)">
+												<h3>US TOP 50</h3>
+												<p></p>
+												<iframe src="https://open.spotify.com/embed/user/spotifycharts/playlist/37i9dQZEVXbLRQDuF5jeBp" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+												
+											</div>
+											
+											
+											
+											<div class="4u$ 12u$(medium)">
+												<h3>TODAY'S TOP HITS</h3>
+												<p></p>
+													<iframe src="https://open.spotify.com/embed/user/spotify/playlist/37i9dQZF1DXcBWIGoYBM5M" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+												
+
+											</div>
+										</div>
+										</div>
+
+									<hr class="major" />
+									
+									
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
